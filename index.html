@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Solar-System</title>
+ <!-- google fonts  -->
+ <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto:wght@300&display=swap"
+  rel="stylesheet">
+ <link rel="stylesheet" href="./index.css">
+ <script src="./index.js"></script>
+</head>
+
+<body>
+ <div class="container">
+  <div class="contant">
+   <h1> Calculate a Weight of an Object on a Planet </h1>
+   <input onchange="getWeight(event)" type="number" placeholder="Mass in K.G">
+   <input onchange="getPlanet(event)" list="planets-list" placeholder="PLANETS" type="text" id="ok-input-list">
+   <datalist id="planets-list">
+    <option value="Mercury">Mercury</option>
+    <option value="Venus">Venus</option>
+    <option value="Earth">Earth</option>
+    <option value="Mars">Mars</option>
+    <option value="Jupiter">Jupiter</option>
+    <option value="Saturn">Saturn</option>
+    <option value="Uranus">Uranus</option>
+    <option value="Neptune">Neptune</option>
+   </datalist>
+   <button onclick="getBtnClick()" class="btn">WEIGHT</button>
+   <div class="result">
+    <h1 id="ans"></h1>
+   </div>
+  </div>
+ </div>
+</body>
+
+</html>
