@@ -61,6 +61,7 @@ h1 {
  box-shadow: inset -9px -9px 12px #979498,
   inset 9px 9px 12px #ffffff;
  height: 200px;
+ padding: 10px 40px;
 }
 
 #ans {
