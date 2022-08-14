@@ -18,7 +18,8 @@ input {
  font-weight: 700;
  font-family: 'Akaya Kanadaka', cursive;
  letter-spacing: 1px;
-
+ margin-right: 20px;
+ margin-top: 20px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -27,35 +28,22 @@ input[type=number]::-webkit-outer-spin-button {
  margin: 0;
 }
 
-.btn {
- background: #053c61;
- background-image: -webkit-linear-gradient(top, #053c61, #708999);
- background-image: -moz-linear-gradient(top, #053c61, #708999);
- background-image: -ms-linear-gradient(top, #053c61, #708999);
- background-image: -o-linear-gradient(top, #053c61, #708999);
- background-image: linear-gradient(to bottom, #053c61, #708999);
- -webkit-border-radius: 13;
- -moz-border-radius: 13;
- border-radius: 13px;
- font-family: Arial;
- color: #ffffff;
- font-size: 16px;
- padding: 13px 22px 13px 22px;
+.buttonClass {
+ padding: 15px 37px;
  text-decoration: none;
- outline: none;
- font-family: 'Akaya Kanadaka', cursive;
- margin-left: 20px;
+ font-family: Arial;
+ color: #fff;
+ font-weight: bold;
+ border-top-left-radius: 28px;
+ border-top-right-radius: 28px;
+ border-bottom-left-radius: 7px;
+ border-bottom-right-radius: 28px;
+ box-shadow: -2px 13px 19px -9px #276873;
+ background: linear-gradient(#599bb3, #408c99);
 }
 
-.btn:hover {
- background: #0e1b24;
- background-image: -webkit-linear-gradient(top, #0e1b24, #3498db);
- background-image: -moz-linear-gradient(top, #0e1b24, #3498db);
- background-image: -ms-linear-gradient(top, #0e1b24, #3498db);
- background-image: -o-linear-gradient(top, #0e1b24, #3498db);
- background-image: linear-gradient(to bottom, #0e1b24, #3498db);
- text-decoration: none;
- cursor: pointer;
+.buttonClass:hover {
+ background: linear-gradient(#408c99, #599bb3);
 }
 
 h1 {
@@ -75,7 +63,7 @@ h1 {
  height: 200px;
 }
 
-#ans{
+#ans {
  font-family: 'DynaPuff', cursive;
  font-size: 22px;
 }
