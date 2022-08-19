@@ -3,11 +3,13 @@
  padding: 0px;
 }
 
+body {
+ background-color: black;
+}
+
 .container {
  display: flex;
  justify-content: center;
- margin-top: 50px;
- height: 90vh;
 }
 
 input {
@@ -42,29 +44,34 @@ input[type=number]::-webkit-outer-spin-button {
  background: linear-gradient(#599bb3, #408c99);
 }
 
-.buttonClass:hover {
- background: linear-gradient(#408c99, #599bb3);
-}
-
 h1 {
  text-align: center;
  font-family: 'Akaya Kanadaka', cursive;
+}
+
+.changesImages {
+ display: flex;
+ justify-content: center;
+ margin-top: 40px;
+}
+
+.changesImages img {
+ border-radius: 50%;
 }
 
 .result {
  display: flex;
  justify-content: center;
  align-items: center;
- margin-top: 200px;
+ margin-top: 70px;
  border-radius: 89px;
  background: #fbf7fd;
- box-shadow: inset -9px -9px 12px #979498,
-  inset 9px 9px 12px #ffffff;
- height: 200px;
+ box-shadow: inset -9px -9px 12px #979498, inset 9px 9px 12px #ffffff;
+ min-height: 56px;
  padding: 10px 40px;
 }
 
 #ans {
- font-family: 'DynaPuff', cursive;
+ font-family: 'Quantico', sans-serif;
  font-size: 22px;
 }

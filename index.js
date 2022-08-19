@@ -1,4 +1,4 @@
-/*** OUR Solar-System PLANETS Gravitational FORCE ***/
+/*** OUR Solar-System PLANETS Gravitational FORCE in m/s^2 ***/
 const MERCURY = 3.7;
 const VENUS = 8.87;
 const EARTH = 9.807;
@@ -18,25 +18,39 @@ function getWeight(event) {
  massInKg = event.target.value
 }
 
+
 function getPlanet(event) {
  planetName = event.target.value
 
+ let imgSrc = document.getElementsByClassName("palnet-change")[0]
+
+ imgSrc.draggable = false
+
  if (planetName === "Mercury") {
   planetMass = MERCURY
+  imgSrc.src = "./images/Mercury.jpg";
  } else if (planetName === "Venus") {
   planetMass = VENUS
- } else if (planetName === "Earth") {
+  imgSrc.src = "./images/Venus.jpg";
+ }
+ else if (planetName === "Earth") {
   planetMass = EARTH
+  imgSrc.src = "./images/Earth.jpg";
  } else if (planetName === "Mars") {
   planetMass = MARS
+  imgSrc.src = "./images/Mars.jpg";
  } else if (planetName === "Jupiter") {
   planetMass = JUPITER
+  imgSrc.src = "https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p1936a-m-1999x2000.png";
  } else if (planetName === "Saturn") {
   planetMass = SATURN
+  imgSrc.src = "https://solarsystem.nasa.gov/system/resources/list_images/2490_hubblesaturn_320.png";
  } else if (planetName === "Uranus") {
   planetMass = URANUS
+  imgSrc.src = "./images/Uranus.jpg";
  } else if (planetName === "Neptune") {
   planetMass = NEPTUNE
+  imgSrc.src = "./images/Neptune.jpg";
  }
 }
 
@@ -48,7 +62,7 @@ function getBtnClick() {
  } else {
   const weight = massInKg * planetMass
   let styleNew = document.getElementById("ans")
-  styleNew.innerText = `THE ${massInKg} K.G of the Object on Earth = ${weight} N`
+  styleNew.innerText = `${massInKg} K.G Object On ${planetName} is = ${weight} Newton`
   styleNew.style.color = "black"          // change the color if value is empty
  }
 }
