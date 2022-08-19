@@ -2,56 +2,55 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Solar-System</title>
- <!-- google fonts  -->
- <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto:wght@300&display=swap">
-
- <!-- Quantico google fonts  -->
- <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap" rel="stylesheet">
-
-
-
- <link rel="stylesheet" href="./index.css">
- <script src="./index.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar-System</title>
+  <!-- google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Quantico google fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js"></script>
 </head>
 
 <body>
- <div class="container">
-  <div>
-   <h1> Calculate a Weight of an Object on a Planet </h1>
-   <input onchange="getWeight(event)" type="number" placeholder="Mass in K.G">
-   <input class="button-62" onchange="getPlanet(event)" list="planets-list" placeholder="PLANETS" type="text"
-    id="ok-input-list">
-   <datalist id="planets-list">
-    <option value="Mercury">Mercury</option>
-    <option value="Venus">Venus</option>
-    <option value="Earth">Earth</option>
-    <option value="Mars">Mars</option>
-    <option value="Jupiter">Jupiter</option>
-    <option value="Saturn">Saturn</option>
-    <option value="Uranus">Uranus</option>
-    <option value="Neptune">Neptune</option>
-   </datalist>
-   <a onclick="getBtnClick()" href="#" class="buttonClass">Weight</a>
+  <div class="container">
+    <div>
+      <!-- top heading  -->
+      <h1> Calculate a Weight of an Object on a Planet </h1>
 
-   <div class="changesImages">
-    <img class="palnet-change"
-     src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
-     alt="planets" height="300px" width="300px">
-   </div>
+      <!-- form to get the calculation  -->
+      <input onchange="getWeight(event)" type="number" placeholder="Mass in K.G">
+      <input class="button-62" onchange="getPlanet(event)" list="planets-list" placeholder="PLANETS" type="text"
+        id="ok-input-list">
+      <datalist id="planets-list">
+        <option value="Mercury">Mercury</option>
+        <option value="Venus">Venus</option>
+        <option value="Earth">Earth</option>
+        <option value="Mars">Mars</option>
+        <option value="Jupiter">Jupiter</option>
+        <option value="Saturn">Saturn</option>
+        <option value="Uranus">Uranus</option>
+        <option value="Neptune">Neptune</option>
+      </datalist>
+      <a onclick="getBtnClick()" href="#" class="buttonClass">Weight</a>
 
-   <div class="result">
-    <h1 id="ans"></h1>
-   </div>
+      <!-- image div  -->
+      <div class="changesImages">
+        <img class="palnet-change"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
+          alt="planets" height="300px" width="300px">
+      </div>
 
+      <!-- result calculation div  -->
+      <div class="result">
+        <h1 id="ans"></h1>
+      </div>
+
+    </div>
   </div>
- </div>
 </body>
 
 </html>
