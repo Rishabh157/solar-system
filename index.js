@@ -41,10 +41,10 @@ function getPlanet(event) {
   imgSrc.src = "./images/Mars.jpg";
  } else if (planetName === "Jupiter") {
   planetMass = JUPITER
-  imgSrc.src = "https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p1936a-m-1999x2000.png";
+  imgSrc.src = "./images/jupiter.png";
  } else if (planetName === "Saturn") {
   planetMass = SATURN
-  imgSrc.src = "https://solarsystem.nasa.gov/system/resources/list_images/2490_hubblesaturn_320.png";
+  imgSrc.src = "./images/saturn.png";
  } else if (planetName === "Uranus") {
   planetMass = URANUS
   imgSrc.src = "./images/Uranus.jpg";
