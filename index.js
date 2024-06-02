@@ -15,54 +15,54 @@ let planetMass = 0        // planets Gravitational force
 let planetName = ""       // user input planet Name
 
 function getWeight(event) {
- massInKg = event.target.value
+    massInKg = event.target.value
 }
 
 
 function getPlanet(event) {
- planetName = event.target.value
+    planetName = event.target.value
 
- let imgSrc = document.getElementsByClassName("palnet-change")[0]
+    let imgSrc = document.getElementsByClassName("palnet-change")[0]
 
- imgSrc.draggable = false
+    imgSrc.draggable = false
 
- if (planetName === "Mercury") {
-  planetMass = MERCURY
-  imgSrc.src = "./images/Mercury.jpg";
- } else if (planetName === "Venus") {
-  planetMass = VENUS
-  imgSrc.src = "./images/Venus.jpg";
- }
- else if (planetName === "Earth") {
-  planetMass = EARTH
-  imgSrc.src = "./images/Earth.jpg";
- } else if (planetName === "Mars") {
-  planetMass = MARS
-  imgSrc.src = "./images/Mars.jpg";
- } else if (planetName === "Jupiter") {
-  planetMass = JUPITER
-  imgSrc.src = "./images/jupiter.png";
- } else if (planetName === "Saturn") {
-  planetMass = SATURN
-  imgSrc.src = "./images/saturn.png";
- } else if (planetName === "Uranus") {
-  planetMass = URANUS
-  imgSrc.src = "./images/Uranus.jpg";
- } else if (planetName === "Neptune") {
-  planetMass = NEPTUNE
-  imgSrc.src = "./images/Neptune.jpg";
- }
+    if (planetName === "Mercury") {
+        planetMass = MERCURY
+        imgSrc.src = "./images/Mercury.jpg";
+    } else if (planetName === "Venus") {
+        planetMass = VENUS
+        imgSrc.src = "./images/Venus.jpg";
+    }
+    else if (planetName === "Earth") {
+        planetMass = EARTH
+        imgSrc.src = "./images/Earth.jpg";
+    } else if (planetName === "Mars") {
+        planetMass = MARS
+        imgSrc.src = "./images/Mars.jpg";
+    } else if (planetName === "Jupiter") {
+        planetMass = JUPITER
+        imgSrc.src = "./images/jupiter.png";
+    } else if (planetName === "Saturn") {
+        planetMass = SATURN
+        imgSrc.src = "./images/saturn.png";
+    } else if (planetName === "Uranus") {
+        planetMass = URANUS
+        imgSrc.src = "./images/Uranus.jpg";
+    } else if (planetName === "Neptune") {
+        planetMass = NEPTUNE
+        imgSrc.src = "./images/Neptune.jpg";
+    }
 }
 
 function getBtnClick() {
- if (planetName === "" || massInKg === 0) {  // validation for empty input values
-  let style = document.getElementById("ans")
-  style.innerText = `input value is empty`
-  style.style.color = "red"               // change the color if value is empty
- } else {
-  const weight = massInKg * planetMass
-  let styleNew = document.getElementById("ans")
-  styleNew.innerText = `${massInKg} K.G Object On ${planetName} is = ${weight} Newton`
-  styleNew.style.color = "black"          // change the color if value is empty
- }
+    if (planetName === "" || massInKg === 0) {  // validation for empty input values
+        let style = document.getElementById("ans")
+        style.innerText = `input value is empty`
+        style.style.color = "red"               // change the color if value is empty
+    } else {
+        const weight = massInKg * planetMass
+        let styleNew = document.getElementById("ans")
+        styleNew.innerText = `${massInKg} K.G Object On ${planetName} is = ${weight} Newton`
+        styleNew.style.color = "black"          // change the color if value is empty
+    }
 }
