@@ -62,7 +62,7 @@ function getBtnClick() {
     } else {
         const weight = massInKg * planetMass
         let styleNew = document.getElementById("ans")
-        styleNew.innerText = `${massInKg} K.G Object On ${planetName} is = ${weight} Newton`
+        styleNew.innerText = `${massInKg} K.G Object On ${planetName} is = ${weight.toFixed(2)} Newton`
         styleNew.style.color = "black"          // change the color if value is empty
     }
 }
